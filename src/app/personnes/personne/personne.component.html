@@ -1,0 +1,18 @@
+<form #personneForm="ngForm" (ngSubmit)="OnAjouter(personneForm)">
+  <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="servicePersonne.selectPersonne.$key">
+  <div class="form-group">
+    <label> Date du jour</label>
+    <input class="form-control" type="date" name="dateJour" #name="ngModel" [(ngModel)]="servicePersonne.selectPersonne.dateJour"required="" placeholder="" >
+    <label> Prenom et Nom</label>
+    <input class="form-control" name="nom" #name="ngModel" [ngModel]="servicePersonne.selectPersonne.nom" placeholder="nom&prenom">
+    <label> Heure d'arrivée</label>
+    <input class="form-control" type="time" name="heureArriv" #name="ngModel" [(ngModel)]="servicePersonne.selectPersonne.heureArriv" placeholder="heureArrv">
+    <label> Heure de départ</label>
+    <input class="form-control" type="time" name="heureDepart" #name="ngModel" [(ngModel)]="servicePersonne.selectPersonne.heureDepart" placeholder="heureDépart">
+  </div>
+  <div class="form-group">
+    <button class="btn btn-dark"> Ajouter</button>
+    <button class="btn btn-success" type="button" (click)="OnActualiser(personneForm)">Actualiser</button>
+  </div>
+</form>
+

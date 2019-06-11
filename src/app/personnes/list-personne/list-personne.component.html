@@ -1,0 +1,17 @@
+<h5 class="text-center">Liste de présence</h5><br/>
+<table class="padd">
+  <tr *ngFor=" let  personne of personnList">
+  <td>{{personne.dateJour}}</td>
+    <td> {{personne.nom}}</td>
+    <td> {{personne.heureArriv}}</td>
+    <td>{{personne.heureDepart}}</td>
+    <button class="material-button material-button-toggle" type="button" (click)="OnEditerPerson(personne)">
+    <span class="fa fa-plus" aria-hidden="true"></span>
+      <strong class="blue">modifier</strong>
+    </button>
+    <button class="material-button material-button-toggle" type="button" (click)="OnsuppPerson(personne.$key)">
+      <span class="fa fa-plus" aria-hidden="true"></span>
+     <strong class="rouge">supprimer</strong>
+    </button>
+  </tr>
+</table>
