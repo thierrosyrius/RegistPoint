@@ -24,7 +24,7 @@
     "core-js": "^2.5.4",
     "firebase": "^4.6.2",
     "ngx-bootstrap": "^4.2.0",
-    "react-native": "^0.59.8",
+    "react-native": "^0.62.3",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.5.2",
     "tslib": "^1.9.0",
